@@ -133,7 +133,7 @@ public class Table implements ITable{
             colors[temp]--;
             deleted++;
             vTable.get(i)[j] = null;
-            System.out.println("dangling piece 1");
+
           }
         }
       }
