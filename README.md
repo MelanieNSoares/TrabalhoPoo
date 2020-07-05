@@ -213,11 +213,10 @@ public void algoInteressante(…) {
 
 
 # Componente Table
-![table](Ctable.png)
 ## Interfaces
   * Interfaces associados a esse componente:
   
-![ITable](ITABLE.png)
+![ITable](assets/Itable.png)
   
 Campo | Valor
 ----- | -----
@@ -251,12 +250,11 @@ public interface ITable {
 ~~~
 
 # Componente Scoreboard
-![scoreboard](Cscoreboard.png)
 
 ## Interfaces
   * Interfaces associados a esse componente:
   
-![IScoreboard](IScore-comp.png)
+![IScoreboard](assets/IScoreboard.png)
   
 Campo | Valor
 ----- | -----
@@ -295,11 +293,10 @@ public interface IScoreboard {
 ~~~
 
 # Componente Piece
-![piece](Cpiece.png)
 ## Interfaces
   * Interfaces associados a esse componente:
   
-![IPiece](Ipiece-comp.png)
+![IPiece](assets/IPiece.png)
   
 Campo | Valor
 ----- | -----
@@ -332,12 +329,11 @@ public interface IPiece {
 ~~~
 
 # Componente CanonLauncher
-![canon](Ccanon.png)
 
 ## Interfaces
   * Interfaces associados a esse componente:
   
-![ICanonLauncher](ICanon-comp.png)
+![ICanonLauncher](assets/CanonLauncher.png)
   
 Campo | Valor
 ----- | -----
