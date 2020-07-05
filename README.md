@@ -154,4 +154,10 @@ public void algoInteressante(…) {
 
 # Conclusões e Trabalhos Futuros
 
-> <Apresente aqui as conclusões do projeto e propostas de trabalho futuro. Esta é a oportunidade em que você pode indicar melhorias no projeto a partir de lições aprendidas e conhecimentos adquiridos durante a realização do projeto, mas que não puderam ser implementadas por questões de tempo. Por exemplo, há design patterns aprendidos no final do curso que provavelmente não puderam ser implementados no jogo -- este é o espaço onde você pode apresentar como aplicaria o pattern no futuro para melhorar o jogo.>
+>
+*Adicionar mais niveis
+*Adicionar mais peca diferentes
+*Implementar mais interacoes de pecas de diferentes tipos
+*Arrumar bugs que aparecem no GUI
+*Implementar uma maneira de armazenar jogadores que atingiram highscores de pontos
+
