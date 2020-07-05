@@ -34,7 +34,7 @@
 # Destaques de Código
 Recursão para verificar os vizinhos da peça lançada
 ~~~java
-public int checkNeighbors(int i,int j, int combo, Table table)
+/*public int checkNeighbors(int i,int j, int combo, Table table)
     {
         if(i-1>=0 && table.vTable.get(i-1)[j] != null && table.vTable.get(i-1)[j].register == register && checkCombo(i-1,j)){
             vCombo.add(new Positions(i-1,j));
@@ -55,7 +55,7 @@ public int checkNeighbors(int i,int j, int combo, Table table)
         }
         
         return combo;
-    }
+    }*/
 ~~~
 
 # Destaques de Pattern
