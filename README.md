@@ -13,19 +13,10 @@
 
 # Vídeos do Projeto
 
-## Vídeo da Prévia
-> <Coloque um link para o vídeo da prévia do projeto.>
-
 ## Vídeo do Jogo
-> <Coloque um link para o vídeo em que é demonstrada a versão final do jogo. Esse vídeo deve ter em torno de 5 minutos. Este vídeo não apresenta slides, nem substitui a apresentação final do projeto, que será feita por conferência. Ele mostra apenas o jogo em funcionamento.>
+> [![Video do Jogo](https://drive.google.com/file/d/15M6MFmM5eAUsT-aPA_ydO8RgKlqb-SRV/view?usp=sharing)
 
-# Slides do Projeto
 
-## Slides da Prévia
-`<Coloque um link para os slides da prévia do projeto.>`
-
-## Slides da Apresentação Final
-`<Coloque um link para os slides da apresentação final do projeto.>`
 
 ## Relatório de Evolução
 
@@ -179,20 +170,6 @@ Remove a ultima linha do tabuleiro,que eh um array dinamico, tornando o jogo mai
    
 ~~~
 
-# Destaques de Pattern
-`<Destaque de patterns adotados pela equipe. Sugestão de estrutura:>`
-
-## Diagrama do Pattern
-`<Diagrama do pattern dentro do contexto da aplicação.>`
-
-## Código do Pattern
-~~~java
-// Recorte do código do pattern seguindo as mesmas diretrizes de outros destaques
-public void algoInteressante(…) {
-   …
-   trechoInteressante = 100;
-}
-~~~
 
 > <Explicação de como o pattern foi adotado e quais suas vantagens, referenciando o diagrama.>
 
