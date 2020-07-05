@@ -56,7 +56,9 @@
         
         return combo;
     }*/
-    
+~~~
+
+~~~java
 // Verifica se a posicao olhada ja foi constado no array dinamico
 /*public boolean checkCombo(int x1, int y1){
         for(int i = 0; i< vCombo.size(); i++){
@@ -67,7 +69,9 @@
         return true;
 
     } */
-    
+~~~  
+
+~~~java   
 // O componente canon possui um queue que lanca sempre a peca da posicao 1;o vetor apenas armazena pecas que estao presentes no tabuleiro
 /*public void updateCanon(Table table, int lvl){
 
@@ -80,7 +84,9 @@
     }
 
   }*/
-  
+~~~
+
+~~~java  
  // metodo que retorna uma peca randomizado; utilizacao de polimorfismo: a partir do nivel 5 pode aparecer uma peca especial no canon.
  /*public Piece getPiece(){
           int_random = random.nextInt(5);/// utiliza a class Random do java para retornar um numero aleatoria que sera interpretado logo em seguida
@@ -103,7 +109,9 @@
 
         return rand;
       }*/
-    
+~~~
+
+~~~java    
 ///utilizacao de um vetor onde os indices representam uma das pecas e armazena a quantidade dessas pecas no tabuleiro. Isso posibilita que o canon sempre tera pecas do tabuleiro
 /*public int setTable(int level){
  ...
@@ -114,7 +122,9 @@
   (vTable.get(x))[y] = piece;
    colors[piece.register]++;
    ...*/
-   
+~~~
+
+~~~java
   /// Remove a ultima linha do tabuleiro,que eh um array dinamico, tornando o jogo mais dificil
   /*public void updateTable(int level, int moves){
     if(level <= 5 && moves % 6 == 0){
