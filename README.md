@@ -209,3 +209,5 @@ public void algoInteressante(…) {
 
 * Implementar uma maneira de armazenar jogadores que atingiram highscores de pontos
 
+* Aprimorar o codigo
+
