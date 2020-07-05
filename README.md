@@ -211,3 +211,167 @@ public void algoInteressante(…) {
 
 * Aprimorar o codigo
 
+
+# Componente Table
+![table](Ctable.png)
+## Interfaces
+  * Interfaces associados a esse componente:
+  
+![ITable](ITABLE.png)
+  
+Campo | Valor
+----- | -----
+Classe | trabalho.table
+Autores | Melanie N Soares
+Objetivo | Tratar os dados do tabuleiro
+Interface | ITable
+
+## Detalhamento das Interfaces
+
+### Interface ITable
+
+Método | Objetivo
+-------| --------
+setTable | Inicializar um tabuleiro pre feito de acordo com o nível atual do jogador
+updateTable | Encurtar o número de linhas do tabuleiro ao fazer jogadas
+checkDangling | Verifica se ha pecas solitarios no tabuleiro
+showTable | Imprimir o tabuleiro na tela
+GameOver | verifica se ha situacao de game over
+
+~~~
+public interface ITable {
+
+ public int setTable(int level);
+ public void updateTable(int level, int moves);
+ public void showTable();
+ public boolean GameOver();
+ public int checkDangling();
+ 
+}
+~~~
+
+# Componente Scoreboard
+![scoreboard](Cscoreboard.png)
+
+## Interfaces
+  * Interfaces associados a esse componente:
+  
+![IScoreboard](IScore-comp.png)
+  
+Campo | Valor
+----- | -----
+Classe | trabalho.scoreboard
+Autores | Melanie N Soares
+Objetivo | Armazena e trata dados do jogo e jogador 
+Interface | IScoreboard
+
+## Detalhamento das Interfaces
+### Interface IScoreBoard
+
+Método | Objetivo
+-------| --------
+updatePoints | Atualizar os pontos do jogador
+updateLevel | Atualizar o nível atual do jogador
+updateCount| Atualizar o número de peças no tabuleiro
+updateMoves | Atualizar o numero de lances feitas
+getPoints | Retornar os pontos do jogador
+getLevel | Retornar o nível do jogador
+getCount | Retornar o numero de peças
+getMoves | Retornar o numero de lances
+
+~~~
+public interface IScoreboard {
+ 
+ public void updateMoves(int moves);
+ public void updatePoints(int points);
+ public void updateLevel(int level);
+ public void updateCount(int count);
+ public int getPoints();
+ public int getLevel();
+ public int getCount();
+ public int getMoves();
+ 
+}
+~~~
+
+# Componente Piece
+![piece](Cpiece.png)
+## Interfaces
+  * Interfaces associados a esse componente:
+  
+![IPiece](Ipiece-comp.png)
+  
+Campo | Valor
+----- | -----
+Classe | trabalho.pieces
+Autores | Melanie N Soares
+Objetivo | Tratar as peças presentes no jogo
+Interface | IPiece
+
+## Detalhamento das Interfaces
+
+### Interface IPiece
+
+Método | Objetivo
+-------| --------
+calculateMovement| Calcular o local no tabuleiro que uma peça lançada cairá
+checkNeighbors| Verificar a vizinhaca da peça lançada afim de determinar o novo estado do tabuleiro
+deletePieces| Remover peças do tabuleiro
+ifCombo| Obter o numero de pecas iguais seguidas
+checkCombo| Verifica se vizinhacas de um pecas ja foram contemplados
+
+~~~
+public interface IPiece {
+ public void calculateMovement(Table table,int position,Scoreboard scoreboard);
+ public int checkNeighbors(int i,int j, int combo, Table table);
+ public void deletePieces(Table table, Scoreboard scoreboard);
+ public int deletePieces(Table table);
+ public void ifCombo(int i, int j, Table table, Scoreboard scoreboard);
+ public boolean checkCombo(int x1, int y1);
+ }
+~~~
+
+# Componente CanonLauncher
+![canon](Ccanon.png)
+
+## Interfaces
+  * Interfaces associados a esse componente:
+  
+![ICanonLauncher](ICanon-comp.png)
+  
+Campo | Valor
+----- | -----
+Classe | trabalho.canon
+Autores | Melanie N Soares
+Objetivo | Simular e armazenar peças de um canhão
+Interface | ICanonLauncher
+
+## Detalhamento das Interfaces
+
+### Interface ICanonLauncher
+
+Método | Objetivo
+-------| --------
+setCanon | Inicializar um vetor queue que armazena as peças a serem lançadas
+showCanon | Mostra o vetor canon no terminal
+updateCanon| Atualizar o vetor queue
+
+~~~
+
+public interface ICanonLauncher {
+    public void setCanon(Table table, int lvl);
+    public void updateCanon(Table table, int lvl);
+    public void showCanon();
+ 
+}
+
+~~~
+
+
+
+
+
+
+
+
+
