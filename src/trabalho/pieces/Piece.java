@@ -14,7 +14,6 @@ public class Piece implements IPiece{
       
     public void calculateMovement(Table table, int position,Scoreboard scoreboard)
     {
-        System.out.println("size is " + table.vTable.size());
         int i = table.vTable.size()- 1;
         if(table.vTable.size() == 1 || table.vTable.get(i-1)[position] !=null){
             table.vTable.get(i)[position] = Piece.this;
@@ -34,7 +33,7 @@ public class Piece implements IPiece{
         vCombo.add(new Positions(i,j));
         int combo = checkNeighbors(i,j,1,table);
 
-        System.out.println(combo);
+
 
         if(combo == 3){
             scoreboard.updateCount(deletePieces(table));
