@@ -155,9 +155,13 @@ public void algoInteressante(…) {
 # Conclusões e Trabalhos Futuros
 
 >
-*Adicionar mais niveis
-*Adicionar mais peca diferentes
-*Implementar mais interacoes de pecas de diferentes tipos
-*Arrumar bugs que aparecem no GUI
-*Implementar uma maneira de armazenar jogadores que atingiram highscores de pontos
+* Adicionar mais niveis
+
+* Adicionar mais peca diferentes
+
+* Implementar mais interacoes de pecas de diferentes tipos
+
+* Arrumar bugs que aparecem no GUI
+
+* Implementar uma maneira de armazenar jogadores que atingiram highscores de pontos
 
