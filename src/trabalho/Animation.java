@@ -42,13 +42,13 @@ public class Animation {
                 return;
             }
 
-            System.out.println("times is " + times);
+
             times++;
 
-            System.out.println("nth is" + nth);
+
 
             nth_Component.setIcon(pieceImg);
-            System.out.println("set");
+
             nth_Component.paintAll(nth_Component.getGraphics());
 
             if(nth < 72){
@@ -75,7 +75,7 @@ public class Animation {
             if(i >= 0 && table.vTable.get(i)[j] == null){
                 return false;
             }
-            System.out.println("time to stop");
+
             t.cancel();
             bubble.Play();
             return true;
