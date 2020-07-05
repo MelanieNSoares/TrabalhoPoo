@@ -32,15 +32,30 @@
 > <Relatório de evolução, descrevendo as evoluções do design do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas e recortes de mudanças são bem-vindos.>
 
 # Destaques de Código
-
-> <Escolha trechos relevantes e/ou de destaque do seu código. Apresente um recorte (você pode usar reticências para remover partes menos importantes). Veja como foi usado o highlight de Java para o código.>
-
+Recursão para verificar os vizinhos da peça lançada
 ~~~java
-// Recorte do seu código
-public void algoInteressante(…) {
-   …
-   trechoInteressante = 100;
-}
+public int checkNeighbors(int i,int j, int combo, Table table)
+    {
+        if(i-1>=0 && table.vTable.get(i-1)[j] != null && table.vTable.get(i-1)[j].register == register && checkCombo(i-1,j)){
+            vCombo.add(new Positions(i-1,j));
+            combo = checkNeighbors(i-1,j,combo+1,table);
+        }
+        if(j-1 >= 0 && table.vTable.get(i)[j-1] != null && table.vTable.get(i)[j-1].register == register && checkCombo(i,j-1)){
+            vCombo.add(new Positions(i,j-1));
+            combo=checkNeighbors(i,j-1,combo+1,table);
+        }
+        if(j+1<=8 && table.vTable.get(i)[j+1] != null && table.vTable.get(i)[j+1].register == register && checkCombo(i,j+1)){
+            vCombo.add(new Positions(i,j+1));
+            combo=checkNeighbors(i,j+1,combo+1,table);
+        }
+
+        if(i+1<= table.vTable.size() && table.vTable.get(i+1)[j] != null && table.vTable.get(i+1)[j].register == register && checkCombo(i+1,j)){
+            vCombo.add(new Positions(i+1,j));
+            combo=checkNeighbors(i+1,j,combo+1,table);
+        }
+        
+        return combo;
+    }
 ~~~
 
 # Destaques de Pattern
