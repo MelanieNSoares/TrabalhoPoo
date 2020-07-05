@@ -24,34 +24,34 @@ public class Table implements ITable{
     
     
 	  if(level == 1){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table1.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table1.csv");
     }
     else if(level == 2){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table2.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table2.csv");
     }
     else if(level == 3){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table3.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table3.csv");
     }
     else if(level == 4){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table4.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table4.csv");
     }
     else if(level == 5){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table5.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table5.csv");
     }
     else if(level == 6){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table6.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table6.csv");
     }
     else if(level == 7){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table7.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table7.csv");
     }
     else if(level == 8){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table8.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table8.csv");
     }
     else if(level == 9){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table9.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table9.csv");
     }
     else if(level == 10){
-      csv.setDataSource("/home/msface96/trabalho/trabalho/table/Levels/Table10.csv");
+      csv.setDataSource("/home/msface96/trabalho/trabalho/table/levels/Table10.csv");
     }
     
     commands = csv.requestCommands();
