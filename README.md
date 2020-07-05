@@ -198,7 +198,8 @@ public void algoInteressante(…) {
 
 # Conclusões e Trabalhos Futuros
 
->
+>Ao decorrer da disciplina foi possivel aprender novas maneiras de implementar codigo, principalmente em java e novas maneiras de pensar baseados em orientacao em objetos. Com isso, por falta de tempo, gostaria de realizar as seguintes mudancas no projeto: 
+
 * Adicionar mais niveis
 
 * Adicionar mais peca diferentes
@@ -211,6 +212,19 @@ public void algoInteressante(…) {
 
 * Aprimorar o codigo
 
+# Documentação dos Componentes
+
+# Diagramas
+
+## Diagrama Geral do Projeto
+
+> <Faça uma breve descrição do diagrama.>
+
+## Diagrama Geral de Componentes
+
+Este é o diagrama compondo componentes para análise:
+
+![Diagrama Analise](assets/Compdiagram.png)
 
 # Componente Table
 ## Interfaces
