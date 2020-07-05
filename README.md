@@ -32,8 +32,8 @@
 > <Relatório de evolução, descrevendo as evoluções do design do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas e recortes de mudanças são bem-vindos.>
 
 # Destaques de Código
-Recursão para verificar os vizinhos da peça lançada
 ~~~java
+//Recursão para verificar os vizinhos da peça lançada e adiciona pecas de tipos iguais a um array dinamico
 /*public int checkNeighbors(int i,int j, int combo, Table table)
     {
         if(i-1>=0 && table.vTable.get(i-1)[j] != null && table.vTable.get(i-1)[j].register == register && checkCombo(i-1,j)){
@@ -56,6 +56,73 @@ Recursão para verificar os vizinhos da peça lançada
         
         return combo;
     }*/
+    
+// Verifica se a posicao olhada ja foi constado no array dinamico
+/*public boolean checkCombo(int x1, int y1){
+        for(int i = 0; i< vCombo.size(); i++){
+            if(vCombo.get(i).x == x1 && vCombo.get(i).y == y1){
+                return false;
+            }
+        }
+        return true;
+
+    } */
+    
+// O componente canon possui um queue que lanca sempre a peca da posicao 1;o vetor apenas armazena pecas que estao presentes no tabuleiro
+/*public void updateCanon(Table table, int lvl){
+
+    temp = qCanon[0];
+    qCanon[1] = temp;
+    qCanon[0] = randomizer.getPiece(lvl);
+
+    while(qCanon[0].register < 5 && table.colors[qCanon[0].register] == 0){
+      qCanon[0] = randomizer.getPiece(lvl);
+    }
+
+  }*/
+  
+ // metodo que retorna uma peca randomizado; utilizacao de polimorfismo: a partir do nivel 5 pode aparecer uma peca especial no canon.
+ /*public Piece getPiece(){
+          int_random = random.nextInt(5);/// utiliza a class Random do java para retornar um numero aleatoria que sera interpretado logo em seguida
+          
+          rand = interpretPiece(int_random);
+    
+        return rand;
+    
+      }
+
+      public Piece getPiece(int lvl){
+        if(lvl >= 5){
+          int_random = random.nextInt(6);
+          rand = interpretPiece(int_random);
+        }
+        else{
+          int_random = random.nextInt(5);
+          rand = interpretPiece(int_random);
+        }
+
+        return rand;
+      }*/
+    
+///utilizacao de um vetor onde os indices representam uma das pecas e armazena a quantidade dessas pecas no tabuleiro. Isso posibilita que o canon sempre tera pecas do tabuleiro
+/*public int setTable(int level){
+ ...
+  colors = new int[5];
+ ...
+  Piece piece = randomizer.getPiece();
+  ...
+  (vTable.get(x))[y] = piece;
+   colors[piece.register]++;
+   ...*/
+   
+  /// Remove a ultima linha do tabuleiro,que eh um array dinamico, tornando o jogo mais dificil
+  /*public void updateTable(int level, int moves){
+    if(level <= 5 && moves % 6 == 0){
+      int length = vTable.size() - 1;
+      vTable.remove(length);
+  
+    }*///
+   
 ~~~
 
 # Destaques de Pattern
