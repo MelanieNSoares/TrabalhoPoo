@@ -14,7 +14,7 @@
 # Vídeos do Projeto
 
 ## Vídeo do Jogo
-> [![Video do Jogo](https://drive.google.com/file/d/15M6MFmM5eAUsT-aPA_ydO8RgKlqb-SRV/view?usp=sharing)
+>https://drive.google.com/file/d/15M6MFmM5eAUsT-aPA_ydO8RgKlqb-SRV/view?usp=sharing
 
 
 
